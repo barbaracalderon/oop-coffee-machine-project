@@ -40,8 +40,8 @@ while is_on:
     elif menu.find_drink(user_choice) is None:
         print('\033[31mError. Please choose an available option.\033[m')
     else:
-        beverage = menu.find_drink(user_choice) #Encapsulates the result
-        sufficient_resources = coffee_maker.is_resource_sufficient(beverage) #TrueFalse result
+        beverage = menu.find_drink(user_choice)  # Encapsulates the result
+        sufficient_resources = coffee_maker.is_resource_sufficient(beverage)  # TrueFalse result
         sufficient_money = money_machine.make_payment(beverage.cost)
         if sufficient_resources and sufficient_money:
             print('Done! Allow us to make your beverage now.')
