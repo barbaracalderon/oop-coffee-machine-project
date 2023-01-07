@@ -1,6 +1,7 @@
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
+from time import sleep
 
 def welcome():
     print('''\033[33m
@@ -46,3 +47,4 @@ while is_on:
         if sufficient_resources and sufficient_money:
             print('Thank you! Allow us to make your beverage now...')
             coffee_maker.make_coffee(beverage)
+            sleep(5)
