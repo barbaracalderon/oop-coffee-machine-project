@@ -44,5 +44,5 @@ while is_on:
         sufficient_resources = coffee_maker.is_resource_sufficient(beverage)  # TrueFalse result
         sufficient_money = money_machine.make_payment(beverage.cost)
         if sufficient_resources and sufficient_money:
-            print('Done! Allow us to make your beverage now.')
+            print('Thank you! Allow us to make your beverage now...')
             coffee_maker.make_coffee(beverage)
